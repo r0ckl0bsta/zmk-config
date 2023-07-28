@@ -19,22 +19,20 @@
 #define GAMING	4
 #define GAMING2	5
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 
 / {
-    conditional_layers {
+	conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
         };
     };
+	
+	&mt {
+    tapping-term-ms = <400>;
 };
 
-/ {
 	behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
