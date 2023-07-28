@@ -21,11 +21,6 @@
 
 
 / {
-	
-	&mt {
-    tapping-term-ms = <400>;
-};
-
 	behaviors {
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
