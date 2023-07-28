@@ -17,6 +17,9 @@
 #define GAMING	4
 #define GAMING2	5
 
+&mt {
+    tapping-term-ms = <400>;
+};
 
 
 / {
