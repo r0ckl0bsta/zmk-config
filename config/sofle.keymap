@@ -21,18 +21,6 @@
     tapping-term-ms = <400>;
 };
 
-/ {
-    behaviors {
-        tm: tap_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-    };
 
 / {
     conditional_layers {
@@ -60,7 +48,7 @@
 &kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp G                         &kp J       &kp L     &kp U     &kp Y    &kp SEMI &kp BSPC
 &kp LSHFT &kp A  &kp R    &kp S    &kp T     &kp D                         &kp H       &kp N     &kp E     &kp I    &kp O    &kp SQT
 &kp LCTRL &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE   &none     &kp K       &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp SPACE    &kp ENTER &tm BSPC 2  &kp RSHFT &kp RALT  &kp RGUI
+                 &kp LGUI &kp LALT &kp LCTRL &mo 1  &kp SPACE    &kp ENTER &mt BSPC 2  &kp RSHFT &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
