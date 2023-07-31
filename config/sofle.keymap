@@ -17,14 +17,13 @@
 #define GAMING	4
 #define GAMING2	5
 
+		&nice_view_spi {
+			cs-gpios = <&pro_micro 0 GPIO_Active_HIGH>;
+		};
 
 / {
 	behaviors {
 	
-		&nice_view_spi {
-			cs-gpios = <&pro_micro 0 GPIO_Active_HIGH>;
-		};
-		
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_SHIFT";
