@@ -17,9 +17,9 @@
 #define GAMING	4
 #define GAMING2	5
 
-		&nice_view_spi {
-			cs-gpios = <&pro_micro 0 GPIO_Active_HIGH>;
-		};
+&nice_view_spi {
+	cs-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
+};
 
 / {
 	behaviors {
