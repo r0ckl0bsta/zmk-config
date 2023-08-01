@@ -121,14 +121,14 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-RGB_TOG    &kp INS      &kp PSCRN    &kp LCTRL    &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
+&bt BT_CLR 			&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
+&rgb_ug RGB_TOG    	&kp INS      &kp PSCRN    &kp LCTRL    &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans  &trans   &trans  &trans    RGB_SAI   RGB_SAD  &trans
+                        &trans       &trans       &trans       &trans  &trans   &trans  &trans    &rgb_ug RGB_SAI   &rgb_ug RGB_SAD  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp RGB_HUD RGB_HUI>;
+            sensor-bindings = <&inc_dec_kp &rgb_ug RGB_HUD &rgb_ug RGB_HUI>;
         };
 
 		gaming_layer {
