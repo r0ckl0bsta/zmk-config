@@ -1,7 +1,7 @@
 manifest:
   remotes:
-    - name: r0ckl0bsta
-      url-base: https://github.com/r0ckl0bsta
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
       remote: r0ckl0bsta
