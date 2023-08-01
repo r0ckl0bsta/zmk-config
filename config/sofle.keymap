@@ -36,12 +36,18 @@
             bindings = <&kp>, <&kp>;
         };
 		
-	conditional_layers {
-		compatible = "zmk,conditional-layers";
-			tri_layer {
-				if-layers = <1 2>;
-				then-layer = <3>;
+		conditional_layers {
+			compatible = "zmk,conditional-layers";
+				tri_layer {
+					if-layers = <1 2>;
+					then-layer = <3>;
+				};
 			};
+		
+		sensors {
+			compatible = "zmk,keymap-sensors";
+			sensors = <&left_encoder &right_encoder>;
+			triggers-per-rotation = <20>;
 		};
    
 	};
