@@ -128,7 +128,7 @@
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &rgb_ug RGB_SAI   &rgb_ug RGB_SAD  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp &rgb_ug RGB_HUI &rgb_ug RGB_HUD>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
 		gaming_layer {
