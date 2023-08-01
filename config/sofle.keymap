@@ -125,7 +125,7 @@
 &rgb_ug RGB_TOG    	&kp INS      &kp PSCRN    &kp LCTRL    &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &trans  &trans
 &trans     &kp LALT     &kp LCTRL    &kp LSHFT    &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans  &trans   &trans  &trans    &rgb_ug RGB_SAI   &rgb_ug RGB_SAD  &trans
+                        &trans       &rgb_ug RGB_HUI &rgb_ug RGB_HUD   &trans  &trans   &trans  &trans    &rgb_ug RGB_SAI   &rgb_ug RGB_SAD  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
