@@ -150,29 +150,37 @@
 // |  CTRL |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |  K  |  M   | ALT  | LOWER|  SPACE |  | ENTER | RAISE| RSHFT | ALT   | GUI  |
             bindings = <
-&kp ESC   &qt N1 N6  &qt N2 N7  &qt N3 N8  &qt N4 N9   &qt N5 N0                            &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &to 0
+&kp ESC   &qt N6 N1  &qt N7 N2  &qt N8 N3  &qt N9 N4   &qt N0 N5                            &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &to 0
 &kp TAB   &kp Q  	 &kp W    	&kp F      &kp P       &kp G                                &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LSHFT &kp A  	 &kp R      &kp S      &kp T       &kp D                                &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  	 &kp X      &kp C      &kp V       &kp B  	&kp C_MUTE &none            &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-					 &kp K      &kp M      &kp LALT    &qt DOT SPACE &mo 5       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
+					 &kp K      &kp M      &kp LALT    &kqt DOT SPACE &mo 5       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
 		gamingraise_layer {
+			bindings = <
 // ------------------------------------------------------------------------------------------------------------
-// |   ESC |  6  |  7  |  8   |  9   |  0   |                   |  6   |  7    |  8    |  9   |   0   |       |
-// |    ;  |  J  |  W  |  F   |  P   |  L   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
-// |  SHFT |  U  |  R  |  S   |  T   |  Y   |                   |  H   |  N    |  E    |  I   |   O   |   '   |
-// |  CTRL |  H  |  N  |  E   |  I   |  O   |  MUTE  |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
-//               |  ,  |  .   | ALT  |      |  SPACE |  | ENTER | RAISE| RSHFT | ALT   | GUI  |
-            bindings = <
-&kp ESC   &kp N6 &kp N7   &kp N8   &kp N9    &kp N0                       &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &trans
-&kp ESC   &kp Q  &kp W    &kp E    &kp R     &kp T                        &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&kp TAB   &kp A  &kp S    &kp D    &kp F     &kp G                        &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B   &kp C_MUTE &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp LGUI &kp LALT &kp LCTRL &trans  &kp SPACE  &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
+// |        |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
+// |        |        |        |        |        |        |                      |         |        |        |        |        |        |
+	 &trans	   &trans   &trans   &trans   &trans   &trans		   				   &trans   &trans	 &trans	  &trans   &trans	&trans
+	 
+// |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
+// |        |        |        |        |        |        |                      |         |        |        |        |        |        |
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
+// |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
+// |        |        |        |        |        |        |                      |         |        |        |        |        |        |
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
+// |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
+// |        |        |        |        |        |        |                      |         |        |        |        |        |        |
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
+
+// 				     |   ESC  |   6    |    7   |    8   |    9   |    |  ESC   |    6    |    7   |    8   |    9   |
+// 					 |        |        |        |        |        |    |        |         |        |        |        |
+					   &kp ESC   &kp Q    &kp W    &kp E    &kp R		 &kp ESC   &kp Q    &kp W    &kp E    &kp R
+
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
