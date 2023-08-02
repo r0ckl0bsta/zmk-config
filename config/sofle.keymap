@@ -118,7 +118,7 @@
 &trans     &kp INS      &kp PSCRN    &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp HOME  &kp UP   &kp END   &trans  &kp DEL
 &trans     &trans       &trans       &trans       &trans       &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &trans  &trans
 &trans     &kp LC(Z)    &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
+                        &trans       &kp PSCRN    &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
@@ -150,11 +150,11 @@
 // |  CTRL |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |  K  |  M   | ALT  | LOWER|  SPACE |  | ENTER | RAISE| RSHFT | ALT   | GUI  |
             bindings = <
-&kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                            &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &to 0
-&kp TAB   &kp Q  &kp W    &kp F    &kp P     &kp G                             &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&kp LSHFT &kp A  &kp R    &kp S    &kp T     &kp D                             &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LCTRL &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE &none           &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                 &kp K    &kp M    &kp LALT  &mo 5  &qt ENTER SPACE  &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
+&kp ESC   &qt N1 N6  &qt N2 N7  &qt N3 N8  &qt N4 N9   &qt N5 N0                            &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &to 0
+&kp TAB   &kp Q  	 &kp W    	&kp F      &kp P       &kp G                                &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&kp LSHFT &kp A  	 &kp R      &kp S      &kp T       &kp D                                &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&kp LCTRL &kp Z  	 &kp X      &kp C      &kp V       &kp B  	&kp C_MUTE &none            &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+					 &kp K      &kp M      &kp LALT    &qt DOT SPACE &mo 5       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
