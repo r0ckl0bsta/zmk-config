@@ -154,7 +154,7 @@
 &kp TAB   &kp Q  	 &kp W    	&kp F      &kp P       &kp G                                &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LSHFT &kp A  	 &kp R      &kp S      &kp T       &kp D                                &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  	 &kp X      &kp C      &kp V       &kp B  	&kp C_MUTE &none            &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-					 &kp K      &kp M      &kp LALT    &kqt DOT SPACE &mo 5       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
+					 &kp K      &kp M      &kp LALT    &qt DOT SPACE &mo 5       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -165,30 +165,24 @@
 // ------------------------------------------------------------------------------------------------------------
 // |        |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
 // |        |        |        |        |        |        |                      |         |        |        |        |        |        |
-//	 &trans	   &trans   &trans   &trans   &trans   &trans		   				   &trans   &trans	 &trans	  &trans   &trans	&trans
+	 &trans	   &trans   &trans   &trans   &trans   &trans		   				   &trans   &trans	 &trans	  &trans   &trans	&trans
 	 
 // |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
 // |        |        |        |        |        |        |                      |         |        |        |        |        |        |
-//	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
-
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
 // |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
 // |        |        |        |        |        |        |                      |         |        |        |        |        |        |
-//	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
-
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
 // |   ESC  |   6    |    7   |    8   |    9   |    0   |                      |   ESC   |   6    |    7   |    8   |    9   |    0   |
 // |        |        |        |        |        |        |                      |         |        |        |        |        |        |
-//	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
+	 &kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
 
 // 				     |   ESC  |   6    |    7   |    8   |    9   |    |  ESC   |    6    |    7   |    8   |    9   |
 // 					 |        |        |        |        |        |    |        |         |        |        |        |
-//					   &kp ESC   &kp Q    &kp W    &kp E    &kp R		 &kp ESC   &kp Q    &kp W    &kp E    &kp R
+					   &kp ESC   &kp Q    &kp W    &kp E    &kp R		 &kp ESC   &kp Q    &kp W    &kp E    &kp R
 					   
 			bindings = <
-				&trans	   &trans   &trans   &trans   &trans   &trans		   				   &trans   &trans	 &trans	  &trans   &trans	&trans
-				&kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
-				&kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
-				&kp ESC   &kp Q    &kp W    &kp E    &kp R    &kp T                           &kp Y     &kp U    &kp I    &kp O    &kp P  &kp BSPC
-								   &kp ESC   &kp Q    &kp W    &kp E    &kp R		 &kp ESC   &kp Q    &kp W    &kp E    &kp R
+
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
