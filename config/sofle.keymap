@@ -166,14 +166,14 @@
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
 // |  TAB  |  J  |  W  |  L   |  U   |  Y   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
 // |  SHFT |  A  |  R  |  S   |  E   |  I   |                   |  H   |  N    |  E    |  I   |   O   |   '   |
-// |  CTRL |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
-//               |  K  |  M   | ALT  | LOWER|  SPACE |  | ENTER | RAISE| RSHFT | ALT   | GUI  |
+// |  CTRL |  O  |  ;  |  '   |  /   |  H   |  MUTE  |  |       |  K   |  M    |  ,    |  .   |   /   | SHIFT |
+//               |  K  |  M   | ALT  | . "" |  trans |  | ENTER | RAISE| RSHFT | ALT   | GUI  |
             bindings = <
-&kp ESC   &qt N6 N1  &qt N7 N2  &qt N8 N3  &qt N9 N4   &qt N0 N5                            &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &to 0
-&kp TAB   &kp J  	 &kp W    	&kp L      &kp U       &kp Y                                &kp J  &kp L     &kp U     &kp Y    &kp SEMI &kp BSPC
-&kp LSHFT &kp A  	 &kp R      &kp S      &kp E       &kp I                                &kp H  &kp N     &kp E     &kp I    &kp O 	 &kp SQT
-&kp LCTRL &kp Z  	 &kp X      &kp C      &kp V       &kp B  	&kp C_MUTE &none            &kp K  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-					 &kp K      &kp M      &kp LALT    &qt DOT SPACE &trans       &kp ENTER &mo 2  &kp RSHFT &kp RALT  &kp RGUI
+&kp ESC   &kp N6     &kp N7     &kp N8     &kp N9      &kp N0                                &kp N6		&kp N7    &kp N8    &kp N9   &kp N0   &to 0
+&kp COMMA &kp J  	 &trans    	&kp L      &kp U       &kp Y                                 &kp J 		&kp L     &kp U     &kp Y    &kp SEMI &kp BSPC
+&kp LSHFT &trans  	 &trans     &trans      &kp E       &kp I                                &kp H 		&kp N     &kp E     &kp I    &kp O 	 &kp SQT
+&kp LCTRL &kp O  	 &kp SEMI   &kp SQT    &kp FSLH    &kp H  	&kp C_MUTE 	&none            &kp K  	&kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+					 &trans     &trans     &trans 	   &trans	&trans      &kp ENTER &mo 2  &kp RSHFT  &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
