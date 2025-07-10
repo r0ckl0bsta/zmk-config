@@ -19,7 +19,7 @@
 #define GAMING2	5
 
 #define AS(keycode) &as LS(keycode) keycode
-&studio_unlock
+
 &nice_view_spi {
 	cs-gpios = <&gpio0 8 GPIO_ACTIVE_HIGH>;
 };
