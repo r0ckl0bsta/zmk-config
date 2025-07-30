@@ -132,16 +132,16 @@
         gaming_layer2 {
 // ----------------------------------------------------------------------------------------------------------------------------
 // |   ESC  |   1[6]  |   2[7]  |   3[8]  |  4[9]   |  5[0]   |                  |   6  |  7   |   8   |  9   |   0   |       |
-// |   TAB  |    Q    |    W    |    E    |    R    |    T    |                  |   Y  |  U   |   I   |  O   |   P   |       |
-// |  SHFT  |    A    |    S    |    D    |    F    |    G    |                  |   H  |  J   |   K   |  L   |   ;   |   '   |
-// |  CTRL  |    Z    |    X    |    C    |    V    |    B    | RGB_TOG | |      |   N  |  M   |   ,   |  .   |   /   |       |
+// |   TAB  |    P    |    W    |    I    |    U    |    Y    |                  |   Y  |  U   |   I   |  O   |   P   |       |
+// |  SHFT  |    A    |    S    |    D    |    J    |    H    |                  |   H  |  J   |   K   |  L   |   ;   |   '   |
+// |  CTRL  |    /    |    .    |    ,    |    M    |    N    | RGB_TOG | |      |   N  |  M   |   ,   |  .   |   /   |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "gaming";
             bindings = <
 &kp ESC     &mt N6 N1 	&mt N7 N2   	&mt N8 N3  	&mt N9 N4  	&mt N0 N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&kp TAB     &kp Q  	&kp W    	&kp E    	&kp R     	&kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&kp LSHFT   &kp A  	&kp S    	&kp D    	&kp F     	&kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
-&kp LCTRL   &kp Z  	&kp X    	&kp C    	&kp V     	&kp B      &kp C_MUTE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+&kp TAB     &kp P  	&kp W    	&kp I    	&kp U     	&kp Y                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&kp LSHFT   &kp A  	&kp S    	&kp D    	&kp J     	&kp H                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&kp LCTRL   &kp FSLH  	&kp DOT    	&kp COMMA    	&kp M     	&kp N      &kp C_MUTE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  	&kp LBKT 	&kp RBKT 	&kp LALT 	&kp SPACE  &trans      &kp RET  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
             >;
         };
