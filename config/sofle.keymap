@@ -117,7 +117,7 @@
 // |   ESC  |   1[6]  |   2[7]  |   3[8]  |  4[9]   |  5[0]   |                  |   6  |  7   |   8   |  9   |   0   |       |
 // |   TAB  |    Q    |    W    |    E    |    R    |    T    |                  |   Y  |  U   |   I   |  O   |   P   |       |
 // |  SHFT  |    A    |    S    |    D    |    F    |    G    |                  |   H  |  J   |   K   |  L   |   ;   |   '   |
-// |  CTRL  |    Z    |    X    |    C    |    V    |    B    | RGB_TOG | |      |   N  |  M   |   ,   |  .   |   /   |       |
+// |  CTRL  |    Z    |    X    |    C    |    V    |    B    | C_MUTE  | |      |   N  |  M   |   ,   |  .   |   /   |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "gaming";
             bindings = <
@@ -134,7 +134,7 @@
 // |   ESC  |   1[6]  |   2[7]  |   3[8]  |  4[9]   |  5[0]   |                  |   6  |  7   |   8   |  9   |   0   |       |
 // |   TAB  |    P    |    W    |    I    |    U    |    Y    |                  |   Y  |  U   |   I   |  O   |   P   |       |
 // |  SHFT  |    A    |    S    |    D    |    J    |    H    |                  |   H  |  J   |   K   |  L   |   ;   |   '   |
-// |  CTRL  |    /    |    .    |    ,    |    M    |    N    | RGB_TOG | |      |   N  |  M   |   ,   |  .   |   /   |       |
+// |  CTRL  |    /    |    .    |    ,    |    M    |    N    |  BASE   | |      |   N  |  M   |   ,   |  .   |   /   |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "gaming";
             bindings = <
