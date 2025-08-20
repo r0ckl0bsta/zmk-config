@@ -139,7 +139,7 @@
             display-name = "gaming";
             bindings = <
 &kp ESC     &mt N6 N1 	&mt N7 N2   	&mt N8 N3  	&mt N9 N4  	&mt N0 N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&kp TAB     &kp P  	&kp W    	&kp I    	&kp U     	&kp Y                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&kp MINUS   &kp P  	&kp W    	&kp I    	&kp U     	&kp Y                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
 &kp LSHFT   &kp A  	&kp S    	&kp D    	&kp J     	&kp H                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL   &kp FSLH  	&kp DOT    	&kp COMMA    	&kp M     	&kp N      &to BASE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  	&kp LBKT 	&kp RBKT 	&kp LALT 	&kp SPACE  &trans      &kp RET  &mo RAISE  &kp RCTRL &kp RALT  &kp RGUI
